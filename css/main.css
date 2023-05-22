@@ -1,0 +1,286 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    transition: 0.2s;
+};
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    background-image: url("https://www.runescape.com/img/rsp777/bg2.jpg");
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+h1{
+    margin-bottom: 1rem;
+
+}
+
+
+
+.hamburger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    height: 4rem;
+    width: 4rem;
+    gap: 0.3rem;
+    z-index: 1000;
+}
+
+
+
+.ham-bar{
+    display: block;
+    background-color: yellow;
+    width: 2rem;
+    height: 0.2rem;
+    margin-right: 10rem;
+}
+
+
+.hamburger.active .bar-top{
+    transform: rotate(45deg) translateY(6px) translateX(5px);
+    
+}
+
+
+.hamburger.active .bar-mid{
+    opacity: 0;
+}
+
+.hamburger.active .bar-bottom{
+    transform: rotate(-45deg) translateY(-6px) translateX(5px);
+}
+
+.navbar{
+    height: 100%;
+    width: 0%;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.activeNav{
+    width: 100%;
+    background-color: white;
+}
+
+.navbar-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    opacity: 0;
+}
+.activeNav .navbar-ul{
+    opacity: 1;
+}
+
+.navbar-item{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-item:hover{
+    text-decoration: underline;
+}
+
+
+.product-img{
+    height: 100px;
+    width: 100px;
+}
+
+
+.text-color{
+    color: yellow;
+    width: 50%;
+    text-decoration: none;
+}
+
+.text-decoration:hover{
+    text-decoration: underline;
+}
+
+.fullPost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  height: auto;
+  width: 80%;
+}
+.wp-image-13, .wp-image-82, .wp-image-17, .wp-image-77,.wp-image-79,.wp-image-53, .wp-image-44, .wp-image-45,.wp-image-46, .wp-image-47, .wp-image-48,.wp-image-50, .wp-image-40,.wp-image-39,.wp-image-38,.wp-image-37,.wp-image-36,.wp-image-35,.wp-image-23,.wp-image-24{
+
+    height: auto;
+    width: 100%;
+}
+.cards{
+    margin-top: 5%;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 2rem;
+}
+
+
+
+.carousel{
+    margin-top: 1rem;
+    display: grid;
+    font-size: x-small;
+    grid-auto-flow: column;
+    grid-auto-columns: 38%;
+    width: 35vw;
+    overflow-x: hidden;
+    overscroll-behavior-inline: contain;
+    object-position: center;
+    scroll-behavior: smooth;
+}
+.carousel h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.carousel-button-next, .carousel-button-prev{
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding:0 .5rem;
+    width: 3rem;
+    margin-bottom: 1rem;
+}
+
+.carousel-button:hover,
+.carousel-button:focus{
+    color: white
+    
+}
+
+.carousel-button.prev{
+    left: 1rem;
+}
+.carousel-button.next{
+    right: 1rem;
+}
+
+.submit{
+    width: 100px;
+    height: 30px;
+}
+
+.submit:hover{
+text-transform: capitalize;
+}
+
+.aboutMe{
+    margin-bottom: 10rem;
+    width: 70%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  input[type="email"],
+  textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  input[type="message"],
+  textarea {
+    height: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px;
+    color: white;
+    border: none;
+  }
+  
+  input[type="submit"]:hover {
+    cursor: pointer;
+  }
+ 
+#errorContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.wp-img-13{
+    width: 100%;
+    size: auto;
+}
+
+
+
+
+
+
+
