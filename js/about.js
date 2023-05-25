@@ -33,7 +33,7 @@ async function callApi(){
         if (json.id === 70){ 
             about.innerHTML+= `<div class= "text-color">    
             <h1>${json.title.rendered}</h1>
-            <p>${json.content.rendered}</p>
+            <h4>${json.content.rendered}</h4>
             </div>
            `   
     }

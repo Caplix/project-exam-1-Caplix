@@ -47,9 +47,9 @@ async function callApi(){
         <p>${item.content.rendered}</p>
         </div>`;
     }
-        if (item.id !== 11){
+        if (item.id !== 11 && item.id !== 70){
         carousel.innerHTML += `<a class="carousel text-decoration text-color" href="specificBlog.html?id=${item.id}">
-        <h1>${item.title.rendered}</h1>
+        <h2>${item.title.rendered}</h2>
         </a>
        `;
 
