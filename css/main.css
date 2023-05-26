@@ -195,9 +195,11 @@ h1{
 }
 
 .carousel-button.prev{
+    display: block;
     left: 1rem;
 }
 .carousel-button.next{
+    display: block;
     right: 1rem;
 }
 
@@ -212,7 +214,7 @@ text-transform: capitalize;
 
 .aboutMe{
     margin-bottom: 10rem;
-    width: 70%;
+    width: 100%;
 }
 
 form {
@@ -285,6 +287,45 @@ form {
 }
 
 
+@media (max-width: 800px) {
+    .carousel-button-next,
+    .carousel-button-prev {
+      display: none;
+    }
+
+    .carousel{
+        margin-top: 1rem;
+        display: grid;
+        font-size: x-small;
+        grid-auto-columns: 50%;
+        width: 36vw;
+        overflow-x:auto;
+        padding: 1rem;
+    }
+  }
+
+  .slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 1rem;
+
+}
+.reSize{
+    margin-top: 3rem;
+    font-size:medium;
+}
+  h2{
+    font-size: small;
+  }
+  h4{
+    font-size: smaller;
+  }
+  p{
+    font-size: small;
+  }
+ 
 
 @media (max-width: 600px) {
     .cards{
