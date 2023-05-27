@@ -34,8 +34,7 @@ async function callApi(){
         fullPost.innerHTML += `<div class= "text-color">    
         <h1>${json[0].title.rendered}</h1>
         <h4>${json[0].content.rendered}</h4>
-        </div>
-       `;
+        </div>`;
 
        console.log(json)
 

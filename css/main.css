@@ -13,7 +13,7 @@ html{
 
 body {
     height: 100vh;
-    background-image: url("https://www.runescape.com/img/rsp777/bg2.jpg");
+    background-image:url("/bilder/runeScapeBackground.jpg") ;
     background-repeat: repeat-y;
     background-size: contain;
 }
@@ -134,8 +134,7 @@ h1{
   height: auto;
   width: 80%;
 }
-.wp-image-13, .wp-image-82, .wp-image-17, .wp-image-77,.wp-image-79,.wp-image-53, .wp-image-44, .wp-image-45,.wp-image-46, .wp-image-47, .wp-image-48,.wp-image-50, .wp-image-40,.wp-image-39,.wp-image-38,.wp-image-37,.wp-image-36,.wp-image-35,.wp-image-23,.wp-image-24{
-
+img{
     height: auto;
     width: 100%;
 }
@@ -286,6 +285,14 @@ form {
     text-decoration: underline;
 }
 
+.has-large-font-size{
+    margin-bottom: 3rem;
+}
+
+.makeGap{
+    margin-bottom: 1rem;
+}
+
 
 @media (max-width: 800px) {
     .carousel-button-next,
@@ -337,6 +344,19 @@ form {
         gap: 2rem;
     }
 
+}
+
+@media (min-width: 1600px) {
+
+      h2{
+        font-size:medium ;
+      }
+      h4{
+        font-size: medium;
+      }
+      p{
+        font-size:large;
+      }
 }
 
 

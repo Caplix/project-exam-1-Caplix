@@ -18,7 +18,7 @@ const loadMoreButton = document.querySelector(".loadMore");
 const url = "https://www.caplix.no/wp-json/wp/v2/posts?_fields=author,id,content,excerpt,title,link/";
 
 let offset = 0; 
-const limit = 4; 
+const limit = 6; 
 
 async function callApi() {
   const response = await fetch(url + `&offset=${offset}&per_page=${limit}`, {
@@ -34,7 +34,7 @@ async function callApi() {
   const results = json;
 
   results.forEach(function (item) {
-    if (item.id !== 11 && item.id !== 70) {
+    if (item.id !== 11) {
       cardContainer.innerHTML += `<a class="text-color text-decoration" href="specificBlog.html?id=${item.id}">
         <h1>${item.title.rendered}</h1>
       </a>`;
