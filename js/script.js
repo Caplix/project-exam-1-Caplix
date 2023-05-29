@@ -1,6 +1,8 @@
 let username ="kristoffer.a.myhre@gmail.com";
 let password ="Lo4E 1tvO DpZ8 tcNM AZik QrY1";
 
+const test = ( "HEADLESS_MODE_CLIENT_URL","https://cozy-treacle-f01a1a.netlify.app/ ");
+
 const contentContainer = document.querySelector(".content")
 
 const body = document.querySelector("body")
@@ -25,8 +27,7 @@ const slideWidth = slider.clientWidth;
 
 
 
-const url ="https://www.caplix.no/wp-json/wp/v2/posts?_fields=author,id,content,excerpt,title,link/";
-
+const url = "https://www.caplix.no/wp-json/wp/v2/posts/?_fields=author,id,content,excerpt,title,link&per_page=100"
 async function callApi(){
     const response = await fetch(url,{
         method: 'GET',

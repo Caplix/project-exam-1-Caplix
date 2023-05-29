@@ -59,9 +59,12 @@ h1{
 }
 
 .navbar{
-    height: 100%;
+
     width: 0%;
-    background-color: white;
+    height: 100vh;
+    background-image:url("/bilder/runeScapeBackground.jpg") ;
+    background-repeat: repeat-y;
+    background-size: contain;
     position: fixed;
     right: 0;
     display: flex;
@@ -88,7 +91,7 @@ h1{
 
 .navbar-item{
     text-decoration: none;
-    color: black;
+    color: yellow;
 }
 
 .navbar-item:hover{
@@ -293,6 +296,9 @@ form {
     margin-bottom: 1rem;
 }
 
+a{
+    font-size: large;
+}
 
 @media (max-width: 800px) {
     .carousel-button-next,
@@ -323,6 +329,8 @@ form {
     margin-top: 3rem;
     font-size:medium;
 }
+
+
   h2{
     font-size: small;
   }
@@ -342,6 +350,9 @@ form {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2,1fr);
         gap: 2rem;
+    }
+    h1 {
+        font-size:medium;
     }
 
 }
