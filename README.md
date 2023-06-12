@@ -12,6 +12,8 @@
 
 ### CSS
 
+### JS
+
 ## Contact
 
 **If you would like yo contact me do so by sending me an email: Kristoffer.a.myhre@gmail.com**
